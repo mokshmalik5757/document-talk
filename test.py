@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import openai
 import os
 from sentence_transformers import SentenceTransformer
-
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.text_splitter import CharacterTextSplitter
 import pinecone
@@ -22,7 +21,7 @@ from streamlit_chat import message
 # from utils import *
 import tiktoken
 from tempfile import NamedTemporaryFile, gettempdir
-import pyautogui
+# import pyautogui
 from tqdm.auto import tqdm
 from uuid import uuid4
 
