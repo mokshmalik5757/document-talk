@@ -430,9 +430,10 @@ def main():
                     message(st.session_state["requests"][i], is_user=True,key=str(i)+ '_user')
 
     column1, column3 = st.columns(2)
-    with column1:
-        if (st.button("Reset Chat")) and (query != ""):
-            pyautogui.hotkey("ctrl", "F5")
+    # this code only runs on localhost
+    # with column1:
+    #     if (st.button("Reset Chat")) and (query != ""):
+    #         pyautogui.hotkey("ctrl", "F5")
 
     with column3:
         if (st.button("Delete Collection")):
