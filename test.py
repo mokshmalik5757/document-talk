@@ -313,7 +313,7 @@ def main():
         if "docs" not in st.session_state:
             st.session_state.docs = False
         colT1, colT2, colT3 = st.columns([1, 8, 64])
-        with st.form(clear_on_submit=False, key="file-upload-form"):
+        with st.form(clear_on_submit=True, key="file-upload-form"):
             with colT3:
                 st.session_state.docs = st.file_uploader("", accept_multiple_files=True)
                 st.text("")
