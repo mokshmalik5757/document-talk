@@ -129,7 +129,6 @@ tokenizer = tiktoken.get_encoding('cl100k_base')
 def find_match(input, k):
     input_em = model.encode(input).tolist()
     result = index.query(input_em, top_k=k, includeMetadata=True, namespace=namespace_name)
-    st.write(namespace_name)
     matches = result['matches']
     text_results = ""
     for match in matches:
